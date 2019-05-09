@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>Notetaker</title>
+</head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+      <h3>Notetaker</h3>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mt-4 float-left">
+          <div class="card-body">
+            <h5 class="card-title">Enter your note</h5>
+            <div class="form-group">
+              <input class="form-control" placeholder="Enter note title" id="noteTitle">
+              </input>
+              <textarea class="form-control mt-3" placeholder="Enter note text" rows="3" id="noteBody">
+             </textarea>
+              <button class="btn btn-success mt-4 float-right save-note" id="noteShow">Show Notes</button>
+              <button class="btn btn-primary mt-4 mr-2 float-right save-note" id="noteSubmit">Save Note</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" id="newDisplay">
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="/assets/app.js"></script>
+</body>
+
+</html>
